@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romulo Magos | IT Student Portfolio</title>
+    <meta name="description" content="Welcome to the professional portfolio of Romulo Magos, an Information Technology student at Davao del Norte State College. View my final projects, tech stack, and get in touch.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="container nav-con">
+            <a href="#home" class="logo" id="nav-logo">Rom.</a>
+            <div class="nav-menu-wrapper" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-item">Home</a></li>
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#project" class="nav-item">Projects</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-btn" aria-label="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Open Mobile Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Home/Hero Section -->
+    <section id="home">
+        <!-- Background decorative blobs -->
+        <div class="bg-blob bg-blob-1" aria-hidden="true"></div>
+        <div class="bg-blob bg-blob-2" aria-hidden="true"></div>
+
+        <header>
+            <div class="container header-container">
+                <div class="header-left reveal">
+                    <div class="image-frame">
+                        <img src="img/MAGOS, ROMULO, YRAY-0007-modified.png" alt="Romulo Magos Profile Picture">
+                    </div>
+                </div>
+                <div class="header-right reveal">
+                    <p class="intro-text">Hello, I'm</p>
+                    <h1>Romulo Magos</h1>
+                    <h2>I am a <span class="typed-text" id="typed-output"></span></h2>
+                    
+                    <div class="header-action-aria">
+                        <a href="#contact" class="btn btn-dark" id="hero-contact-btn">Contact Info</a>
+                    </div>
+                    
+                    <div class="header-social">
+                        <a href="https://www.facebook.com/romskie.magos.1/" target="_blank" rel="noopener" class="social-icon fb" aria-label="Facebook Profile">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/r0mm_09/" target="_blank" rel="noopener" class="social-icon ig" aria-label="Instagram Profile">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://x.com/R0mms_09" target="_blank" rel="noopener" class="social-icon x" aria-label="X Twitter Profile">
+                            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <p class="heading-p">Get To Know More</p>
+            <h2 class="heading">About Me</h2>
+            
+            <div class="about-container">
+                <div class="about-left reveal">
+                    <div class="edu-box">
+                        <div class="icon-wrap">
+                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <h4>Education</h4>
+                        <p><strong>Davao del Norte State College</strong></p>
+                        <p>Bachelor of Science in Information Technology (BSIT-3C)</p>
+                    </div>
+                </div>
+                <div class="about-right reveal">
+                    <div class="about-bio">
+                        <p>Hello, I'm <strong>Romulo Magos</strong>, and I'm currently pursuing a Bachelor of Science in Information Technology. As a third-year student, I have developed a strong passion for tech-driven solutions, design innovation, and software development.</p>
+                        <p>My core technical foundation spans Java, HTML, CSS, and interactive JavaScript. Additionally, I have gained hands-on familiarity and practical knowledge in building web applications using Python, Django, ReactJS, and PHP.</p>
+                        <p>I thrive in collaborative team environments, working alongside groupmates to design and develop academic and personal projects. Collaborative efforts have strengthened my communication skills, adaptive problem-solving, and coordination. I look forward to further expanding my tech stack and building high-quality, impactful digital solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="project">
+        <div class="container">
+            <p class="heading-p" id="projtxt">Portfolio Showcase</p>
+            <h2 class="heading">Featured Projects</h2>
+            <p id="projtxt1">A collection of academic and personal projects designed and developed during my college journey.</p>
+            
+            <div class="project-container">
+                <!-- Project 1 -->
+                <article class="project reveal" id="project-akatsuki">
+                    <div class="project-img-wrapper">
+                        <img src="img/project_1.png" alt="Akatsuki Hotel Billing and Reservation Management System Interface">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <h3>Akatsuki Hotel Booking</h3>
+                        <p>An online hotel billing and reservation management system built to streamline bookings, client billing, and availability checkers. Features custom navigation and structured page states.</p>
+                        <div class="header-action-aria">
+                            <a target="_blank" rel="noopener" href="https://ivan3-5.github.io/akatsuki-hotel-web/?fbclid=IwZXh0bgNhZW0CMTAAAR2fQN_EaIiWJr4GKgUoGhYWt__dvzqXyIE2XI6a1Me-sTaLbIqTnGnO190_aem_AUA_FFlUWlDY4kGQp6q9rtxgEH1KDt2NgCCvaJAzeFyOgzZFiWbEKzw2a6V3ordDgMp4Q6gQYqEnOUjc9vInLHlS" class="btn" id="demo-btn-akatsuki">
+                                <span>Live Demo</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project reveal" id="project-crud">
+                    <div class="project-img-wrapper">
+                        <img src="img/project_2.jpg" alt="Java CRUD Operations interface screenshot">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Swing GUI</span>
+                            <span class="tag">CRUD</span>
+                        </div>
+                        <h3>Akatsuki Backend CRUD</h3>
+                        <p>A desktop database application handling full Create, Read, Update, and Delete operations for the reservation system backend, built in Java with Swing framework graphical interfaces.</p>
+                        <div class="header-action-aria">
+                            <a target="_blank" rel="noopener" href="https://github.com/ivan3-5/akatsuki-hotel-java?fbclid=IwZXh0bgNhZW0CMTAAAR244-7-7fUBLLXDOV7QoJKlZ5aIsZ6VJIGel3QrxSqKeVdlmkt0CAsaiG4_aem_AUDxuekbrh89AZjZq8Z4WFAUOXbOoJX_Dgmmu4Xo_aPNGuJw16M4WDVeBjDdW3jtPLWnPNXAoQ3-K-zcpmFSUO5g" class="btn" id="repo-btn-crud">
+                                <span>Github Repository</span> <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project reveal" id="project-secureauth">
+                    <div class="project-img-wrapper">
+                        <img src="img/SecureAuth.png" alt="SecureAuth User Authentication System Interface">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Authentication</span>
+                        </div>
+                        <h3>SecureAuth System</h3>
+                        <p>A secure user authentication and login dashboard demonstrating modern web security fundamentals. Built as a class activity to implement secure route protections and credential hashing.</p>
+                        <div class="header-action-aria">
+                            <a target="_blank" rel="noopener" href="https://authsecure.liveblog365.com/public/index.php" class="btn" id="demo-btn-secureauth">
+                                <span>Live Demo</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <p class="heading-p">Get in Touch</p>
+            <h2 class="heading">Contact Me</h2>
+            
+            <div class="contact-container reveal" id="contact-card">
+                <div class="email">
+                    <div class="icon-wrap">
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <h5>Direct Email</h5>
+                    <a href="mailto:romulomagos16@gmail.com" id="email-link">romulomagos16@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#about" class="footer-link">About</a></li>
+                <li><a href="#project" class="footer-link">Projects</a></li>
+                <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+            <p class="copyright">&copy; 2026 Romulo Magos. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+</html>
