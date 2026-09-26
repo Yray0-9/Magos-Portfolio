@@ -1,4 +1,6 @@
-Romulo Y. Magos Jr.
-BSIT 4C
+# Curriculum Vitae / Portfolio
 
-# APPLICATION DEVELOPMENT AND EMERGING TECHNOLOGIES
+- **Full Name:** Romulo Y. Magos Jr.
+- **Year Level:** 4th Year
+- **Set / Section:** Set C (BSIT 4C)
+- **Subject:** Application Development and Emerging Technologies
