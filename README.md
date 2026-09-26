@@ -1,1 +1,4 @@
-# magos_Portfolio
+Romulo Y. Magos Jr.
+BSIT 4C
+
+# APPLICATION DEVELOPMENT AND EMERGING TECHNOLOGIES
