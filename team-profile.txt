@@ -1,1 +1,1 @@
-Team description: We are learning Git and GitHub.
+Team description: Student B focuses on website development.
