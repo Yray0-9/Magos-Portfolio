@@ -1,1 +1,1 @@
-Team description: Student A focuses on website design.
+Team description: Student A focuses on website design, and Student B focuses on website development.
