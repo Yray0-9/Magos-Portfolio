@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- TYPING ANIMATION ---
     const typedTextSpan = document.getElementById('typed-output');
-    const textArray = ["Student.", "Developer.", "Tech Enthusiast."];
+    const textArray = ["Software Developer.", "Web Developer.", "IT Professional."];
     const typingSpeed = 100;
     const erasingSpeed = 60;
     const newTextDelay = 2000; // Delay between current and next text

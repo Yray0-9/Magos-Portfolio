@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romulo Magos | IT Student Portfolio</title>
     <meta name="description" content="Welcome to the professional portfolio of Romulo Magos, an Information Technology student at Davao del Norte State College. View my final projects, tech stack, and get in touch.">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=15">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
           integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
           crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -46,6 +46,7 @@
         <!-- Background decorative blobs -->
         <div class="bg-blob bg-blob-1" aria-hidden="true"></div>
         <div class="bg-blob bg-blob-2" aria-hidden="true"></div>
+        <div class="bg-blob bg-blob-3" aria-hidden="true"></div>
 
         <header>
             <div class="container header-container">
@@ -57,13 +58,23 @@
                 <div class="header-right reveal">
                     <p class="intro-text">Hello, I'm</p>
                     <h1>Romulo Magos</h1>
-                    <h2>I am a <span class="typed-text" id="typed-output"></span></h2>
+                    <p class="career-title" id="career-title">
+                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                        4th Year BSIT Student
+                    </p>
+                    <h2>Aspiring <span class="typed-text" id="typed-output"></span></h2>
                     
                     <div class="header-action-aria">
                         <a href="#contact" class="btn btn-dark" id="hero-contact-btn">Contact Info</a>
+                        <a href="https://github.com/Yray0-9" target="_blank" rel="noopener" class="btn" id="hero-github-btn">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> <span>GitHub</span>
+                        </a>
                     </div>
                     
                     <div class="header-social">
+                        <a href="https://github.com/Yray0-9" target="_blank" rel="noopener" class="social-icon gh" aria-label="GitHub Profile">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        </a>
                         <a href="https://www.facebook.com/romskie.magos.1/" target="_blank" rel="noopener" class="social-icon fb" aria-label="Facebook Profile">
                             <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
                         </a>
@@ -85,22 +96,80 @@
             <p class="heading-p">Get To Know More</p>
             <h2 class="heading">About Me</h2>
             
-            <div class="about-container">
-                <div class="about-left reveal">
-                    <div class="edu-box">
-                        <div class="icon-wrap">
-                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
-                        </div>
-                        <h4>Education</h4>
-                        <p><strong>Davao del Norte State College</strong></p>
-                        <p>Bachelor of Science in Information Technology (BSIT-4C)</p>
+            <div class="about-wrapper">
+                <div class="about-bio reveal">
+                    <p>Hello, I'm <strong>Romulo Magos</strong>, a fourth-year student pursuing a Bachelor of Science in Information Technology at <strong>Davao del Norte State College</strong>. I have developed a strong passion for tech-driven solutions, design innovation, and software development.</p>
+                    <p>My core technical foundation spans HTML, CSS, interactive JavaScript, and ReactJS on the frontend, complemented by practical hands-on experience in building web applications using Python, Django, and PHP.</p>
+                    <p>I thrive in collaborative team environments, working alongside groupmates to design and develop academic and personal projects. Collaborative efforts have strengthened my teamwork, attention to detail, and project coordination. I look forward to further expanding my tech stack and building high-quality, impactful digital solutions.</p>
+                </div>
+
+                <!-- Career Interests -->
+                <div class="career-interests-wrap reveal">
+                    <span class="interests-label">
+                        <i class="fa-solid fa-compass" aria-hidden="true"></i> Career Interests:
+                    </span>
+                    <div class="interest-chips">
+                        <span class="interest-chip"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Web Development</span>
+                        <span class="interest-chip"><i class="fa-solid fa-palette" aria-hidden="true"></i> Frontend & UI Design</span>
+                        <span class="interest-chip"><i class="fa-solid fa-server" aria-hidden="true"></i> Backend Systems</span>
+                        <span class="interest-chip"><i class="fa-solid fa-database" aria-hidden="true"></i> Database Management</span>
                     </div>
                 </div>
-                <div class="about-right reveal">
-                    <div class="about-bio">
-                        <p>Hello, I'm <strong>Romulo Magos</strong>, and I'm currently pursuing a Bachelor of Science in Information Technology. As a fourth-year student, I have developed a strong passion for tech-driven solutions, design innovation, and software development.</p>
-                        <p>My core technical foundation spans Java, HTML, CSS, and interactive JavaScript. Additionally, I have gained hands-on familiarity and practical knowledge in building web applications using Python, Django, ReactJS, and PHP.</p>
-                        <p>I thrive in collaborative team environments, working alongside groupmates to design and develop academic and personal projects. Collaborative efforts have strengthened my communication skills, adaptive problem-solving, and coordination. I look forward to further expanding my tech stack and building high-quality, impactful digital solutions.</p>
+
+                <div class="about-cards-grid">
+                    <!-- Education Card -->
+                    <div class="about-card edu-card reveal">
+                        <div class="card-top">
+                            <div class="icon-wrap edu-icon">
+                                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                            </div>
+                            <span class="card-pill">Academic Journey</span>
+                        </div>
+                        <h4>Education</h4>
+                        
+                        <div class="edu-entries">
+                            <!-- College -->
+                            <div class="edu-entry">
+                                <div class="edu-entry-header">
+                                    <span class="edu-level-badge">College &middot; 4th Year</span>
+                                </div>
+                                <p class="card-title">Davao del Norte State College</p>
+                                <p class="card-subtitle">Bachelor of Science in Information Technology (BSIT-4C)</p>
+                            </div>
+
+                            <!-- Senior High School -->
+                            <div class="edu-entry">
+                                <div class="edu-entry-header">
+                                    <span class="edu-level-badge shs-badge">Senior High School</span>
+                                </div>
+                                <p class="card-title">North Davao Colleges, Inc. (NDCI)</p>
+                                <p class="card-subtitle">Panabo City, Davao del Norte</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Career Objective Card -->
+                    <div class="about-card obj-card reveal" id="career-objective">
+                        <div class="card-top">
+                            <div class="icon-wrap obj-icon">
+                                <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+                            </div>
+                            <span class="card-pill obj-pill">Career Objective</span>
+                        </div>
+                        <h4>Professional Goal</h4>
+                        <div class="obj-body">
+                            <p class="card-text">To launch my career as an entry-level software or web developer where I can apply my skills in modern web development, contribute to meaningful real-world projects, and continuously grow into a well-rounded IT professional.</p>
+                            <div class="obj-highlights">
+                                <div class="obj-item">
+                                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                    <span>Target: Junior Software / Web Developer</span>
+                                </div>
+                                <div class="obj-item">
+                                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                    <span>Focus: Modern Web Tech & Continuous Growth</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,7 +250,7 @@
                         </div>
                         <div>
                             <h3>Database & Tools</h3>
-                            <p class="category-desc">Data storage, version control, and GUI interfaces</p>
+                            <p class="category-desc">Data storage, version control, and developer workflows</p>
                         </div>
                     </div>
                     <div class="skill-items">
@@ -204,7 +273,7 @@
                         </div>
                         <div>
                             <h3>Professional Strengths</h3>
-                            <p class="category-desc">Engineering mindset and team communication</p>
+                            <p class="category-desc">Engineering mindset and team collaboration</p>
                         </div>
                     </div>
                     <div class="skill-items">
@@ -245,7 +314,7 @@
                         <h3>Akatsuki Hotel Booking</h3>
                         <p>An online hotel billing and reservation management system built to streamline bookings, client billing, and availability checkers. Features custom navigation and structured page states.</p>
                         <div class="header-action-aria">
-                            <a target="_blank" rel="noopener" href="https://ivan3-5.github.io/akatsuki-hotel-web/?fbclid=IwZXh0bgNhZW0CMTAAAR2fQN_EaIiWJr4GKgUoGhYWt__dvzqXyIE2XI6a1Me-sTaLbIqTnGnO190_aem_AUA_FFlUWlDY4kGQp6q9rtxgEH1KDt2NgCCvaJAzeFyOgzZFiWbEKzw2a6V3ordDgMp4Q6gQYqEnOUjc9vInLHlS" class="btn" id="demo-btn-akatsuki">
+                            <a target="_blank" rel="noopener" href="https://ivan3-5.github.io/akatsuki-hotel-web/" class="btn" id="demo-btn-akatsuki">
                                 <span>Live Demo</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
                             </a>
                         </div>
@@ -267,7 +336,7 @@
                         <h3>Akatsuki Backend CRUD</h3>
                         <p>A desktop database application handling full Create, Read, Update, and Delete operations for the reservation system backend, built in Java with Swing framework graphical interfaces.</p>
                         <div class="header-action-aria">
-                            <a target="_blank" rel="noopener" href="https://github.com/ivan3-5/akatsuki-hotel-java?fbclid=IwZXh0bgNhZW0CMTAAAR244-7-7fUBLLXDOV7QoJKlZ5aIsZ6VJIGel3QrxSqKeVdlmkt0CAsaiG4_aem_AUDxuekbrh89AZjZq8Z4WFAUOXbOoJX_Dgmmu4Xo_aPNGuJw16M4WDVeBjDdW3jtPLWnPNXAoQ3-K-zcpmFSUO5g" class="btn" id="repo-btn-crud">
+                            <a target="_blank" rel="noopener" href="https://github.com/ivan3-5/akatsuki-hotel-java" class="btn" id="repo-btn-crud">
                                 <span>Github Repository</span> <i class="fa-brands fa-github" aria-hidden="true"></i>
                             </a>
                         </div>
@@ -305,13 +374,35 @@
             <p class="heading-p">Get in Touch</p>
             <h2 class="heading">Contact Me</h2>
             
-            <div class="contact-container reveal" id="contact-card">
-                <div class="email">
+            <div class="contact-cards-grid reveal" id="contact-card">
+                <!-- Email Card -->
+                <div class="contact-card">
                     <div class="icon-wrap">
                         <i class="fa-regular fa-envelope" aria-hidden="true"></i>
                     </div>
                     <h5>Direct Email</h5>
                     <a href="mailto:romulomagos16@gmail.com" id="email-link">romulomagos16@gmail.com</a>
+                    <p class="location-sub">Send a direct message</p>
+                </div>
+
+                <!-- GitHub Card -->
+                <div class="contact-card">
+                    <div class="icon-wrap github-icon">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </div>
+                    <h5>GitHub Profile</h5>
+                    <a href="https://github.com/Yray0-9" target="_blank" rel="noopener" id="contact-github-link">@Yray0-9</a>
+                    <p class="location-sub">github.com/Yray0-9</p>
+                </div>
+
+                <!-- Location Card -->
+                <div class="contact-card">
+                    <div class="icon-wrap location-icon">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    </div>
+                    <h5>Current Location</h5>
+                    <p class="location-text">Brgy. Nanyo, Panabo City</p>
+                    <p class="location-sub">Davao del Norte, Philippines</p>
                 </div>
             </div>
         </div>
