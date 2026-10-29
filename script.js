@@ -47,21 +47,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
     const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('.nav-links a');
-    
+
+    const closeMobileMenu = () => {
+        mobileToggleBtn.classList.remove('active');
+        navMenu.classList.remove('active');
+        mobileToggleBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    };
+
     mobileToggleBtn.addEventListener('click', () => {
         const isExpanded = mobileToggleBtn.getAttribute('aria-expanded') === 'true';
-        mobileToggleBtn.setAttribute('aria-expanded', !isExpanded);
-        mobileToggleBtn.classList.toggle('active');
-        navMenu.classList.toggle('active');
+        const nextState = !isExpanded;
+        mobileToggleBtn.setAttribute('aria-expanded', String(nextState));
+        mobileToggleBtn.classList.toggle('active', nextState);
+        navMenu.classList.toggle('active', nextState);
+        document.body.style.overflow = nextState ? 'hidden' : '';
     });
-    
+
     // Close mobile menu when a link is clicked
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileToggleBtn.classList.remove('active');
-            navMenu.classList.remove('active');
-            mobileToggleBtn.setAttribute('aria-expanded', 'false');
-        });
+        link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Close mobile menu on Escape key or desktop resize
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+            closeMobileMenu();
+            mobileToggleBtn.focus();
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && navMenu.classList.contains('active')) {
+            closeMobileMenu();
+        }
     });
 
     // --- TYPING ANIMATION ---
@@ -95,8 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    // Start typing animation
-    if (textArray.length) setTimeout(type, newTextDelay);
+    // Start typing animation promptly on load
+    if (textArray.length) setTimeout(type, 300);
 
     // --- SCROLL REVEAL (INTERSECTION OBSERVER) ---
     const revealElements = document.querySelectorAll('.reveal');
@@ -143,4 +162,36 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.addEventListener('scroll', handleActiveLink);
     handleActiveLink(); // Initial check
+
+    // --- COPY EMAIL TO CLIPBOARD ---
+    const copyEmailBtn = document.getElementById('copy-email-btn');
+    if (copyEmailBtn) {
+        let copyTimeout;
+        copyEmailBtn.addEventListener('click', async () => {
+            const email = 'romulomagos16@gmail.com';
+            try {
+                await navigator.clipboard.writeText(email);
+            } catch {
+                const tempInput = document.createElement('input');
+                tempInput.value = email;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+            }
+
+            const icon = copyEmailBtn.querySelector('i');
+            const label = copyEmailBtn.querySelector('span');
+            copyEmailBtn.classList.add('copied');
+            if (icon) icon.className = 'fa-solid fa-check';
+            if (label) label.textContent = 'Copied!';
+
+            clearTimeout(copyTimeout);
+            copyTimeout = setTimeout(() => {
+                copyEmailBtn.classList.remove('copied');
+                if (icon) icon.className = 'fa-regular fa-copy';
+                if (label) label.textContent = 'Copy Email';
+            }, 2000);
+        });
+    }
 });
